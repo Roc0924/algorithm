@@ -1,4 +1,4 @@
-package learing.algorithm.simple;
+package learing.algorithm.simple.quickSort;
 
 /**
  * Create with IntelliJ IDEA
