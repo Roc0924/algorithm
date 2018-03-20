@@ -6,6 +6,7 @@ package learing.algorithm.simple.twoSum;
  * Date                 : 2018/3/17
  * Time                 : 下午3:44
  * Description          : 两数之和
+ * https://leetcode-cn.com/submissions/detail/59518/      查看leetCode上其他人的代码
  */
 
 public class Solution {
@@ -21,12 +22,12 @@ public class Solution {
         int lo = start;
         int hi = end;
 
-        while(lo < hi) {
-            while(input[hi].value >= base.value && lo < hi) {
+        while (lo < hi) {
+            while (input[hi].value >= base.value && lo < hi) {
                 hi--;
             }
             input[lo] = input[hi];
-            while(input[lo].value <= base.value && lo < hi) {
+            while (input[lo].value <= base.value && lo < hi) {
                 lo++;
             }
             input[hi] = input[lo];
@@ -63,7 +64,6 @@ public class Solution {
         quickSort(nodes, 0, nodes.length - 1);
 
 
-
         // find
         for (int i = 0; i < nodes.length; i++) {
             int delta = target - nodes[i].value;
@@ -79,8 +79,6 @@ public class Solution {
 
         return result;
     }
-
-
 
 
 }
